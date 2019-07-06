@@ -1,0 +1,115 @@
+ {
+  "scene": "camera_scene",
+  "directory": "data/assets/",
+    "geometries": [
+    {"name": "nanosuit", "file": "nanosuit.obj"},
+    {"name": "cubemap", "file": "cubemap.obj"}
+  ],
+  "textures": [],
+  "shaders": [],
+  "materials": [],
+  "lights": [],
+  "entities": [],
+  "cameras": [
+    {
+      "name": "camera_main",
+      "movement": "free",
+	  "position": [ 0, 0, 0 ],
+      "direction": [ -1, -1, -1 ],
+      "fov": 65,
+	  "near": 0.03,
+	  "far": 1000
+    },
+    {
+      "name": "camera_flyover",
+      "movement": "free",
+	  "position": [ 0, 0, 0 ],
+      "direction": [ -1, -1, -1 ],
+      "fov": 65,
+	  "near": 0.03,
+	  "far": 1000
+    },
+    {
+      "name": "camera_test1",
+      "movement": "free",
+	  "position": [ -8, 2, -8 ],
+      "direction": [ 1, 0, 0 ],
+	  	  "target": [ 0, 0, 0 ],
+      "fov": 65,
+	  "near": 0.03,
+	  "far": 1000
+    },
+	{
+      "name": "camera_test2",
+      "movement": "free",
+	  "position": [ -8, 2, 8 ],
+      "direction": [ 1, 0, 0 ],
+  	  "target": [ 0, 0, 0 ],
+  	  "viewtrack": "ball",
+	  "fov": 65,
+	  "near": 0.03,
+	  "far": 1000
+    },
+	{
+      "name": "camera_test3",
+      "movement": "free",
+	  "position": [ 8, 2, 8 ],
+      "direction": [ 1, 0, 0 ],
+	  "target": [ 0, 0, 0 ],
+      "fov": 65,
+	  "near": 0.03,
+	  "far": 1000
+    },
+	{
+      "name": "camera_test4",
+      "movement": "free",
+	  "position": [ 8, 2, -8 ],
+      "direction": [ 1, 0, 0 ],
+	  "target": [ 0, 0, 0 ],
+      "fov": 65,
+	  "near": 0.03,
+	  "far": 1000
+    },
+	{
+      "name": "camera_track",
+      "movement": "free",
+	  "position": [-10, -3, 5 ],
+      "direction": [ 1, 0, 0 ],
+	  "target": [ 0, 0, 0 ],
+	  "viewtrack": "ball",
+      "fov": 65,
+	  "near": 0.03,
+	  "far": 1000,
+	  "track" : {
+		"speed" : 0.15,
+		"knots" : [
+			[0, 1, 14],
+			[14, 1, 0],
+			[0, 1, -14],
+			[-14, 1, 0]
+		]
+	  }
+    },
+	{
+      "name": "camera_track2",
+      "movement": "free",
+	  "position": [-10, -3, 5 ],
+      "direction": [ 1, 0, 0 ],
+	  "target": [ 0, 0, 0 ],
+      "fov": 65,
+	  "near": 0.03,
+	  "far": 1000,
+	  "viewtrack": "ball",
+	  "track" : {
+		"speed" : 0.15,
+		"knots" : [
+			[0, 0, 14],
+			[0, 9, 7],
+			[0, 15, 0],
+			[0, 9, -7],
+			[0, 0, -14]
+		]
+	  }
+    }
+  ]
+}
