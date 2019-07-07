@@ -20,6 +20,6 @@ Once the user has submitted the issue, the tool will create a file in the 'Bugs'
 
 We have finished the tool by adding transforms options to the spawn of the objects. If you specify a position(offset), rotation and scale, the object will have this transforms applied. 
 
-##TODO
+![](unity.gif)
 
 Also, we have improved the tool, so the user doesn't have to stop and rerun the adding object every time he makes a changes.
