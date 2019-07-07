@@ -4,7 +4,7 @@
 
 First we have modified our maxscript code so now it will create a file with the animations of all the objects of the scene. Also we changed the file adding the total number of frames to known where the next animation begins.
 
-## TODO GIFS
-
 Then we modified the animation parser so it will accept more than one animation from one file.
 
+
+![](tetera.gif)
